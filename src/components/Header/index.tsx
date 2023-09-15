@@ -2,15 +2,15 @@ import styles from './styles.module.scss';
 import Image from 'next/image';
 import logo from '@/../public/images/logo.svg';
 import Link from 'next/link';
- import ActiveLink from '../ActiveLink';
+import ActiveLink from '../ActiveLink';
 
 export default function Header() {
-    return(
+    return (
         <header className={styles.headerConteiner}>
             <div className={styles.headerContent}>
-                <a>
+                <ActiveLink href="/" activeClassname={styles.active}>
                     <Image src={logo} alt='Sujeito programador logo' />
-                </a>
+                </ActiveLink>
 
                 <nav>
                     <ActiveLink href="/" activeClassname={styles.active}>
