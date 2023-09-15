@@ -2,6 +2,7 @@ import styles from './styles.module.scss';
 import Image from 'next/image';
 import logo from '@/../public/images/logo.svg';
 import Link from 'next/link';
+ import ActiveLink from '../ActiveLink';
 
 export default function Header() {
     return(
@@ -12,17 +13,17 @@ export default function Header() {
                 </a>
 
                 <nav>
-                    <Link href="/">
+                    <ActiveLink href="/" activeClassname={styles.active}>
                         <span>Home</span>
-                    </Link>
+                    </ActiveLink>
 
-                    <Link href="/posts">
+                    <ActiveLink href="/posts" activeClassname={styles.active}>
                         <span>Conteudo</span>
-                    </Link>
+                    </ActiveLink>
 
-                    <Link href="/sobre">
+                    <ActiveLink href="/sobre" activeClassname={styles.active}>
                         <span>Quem somos?</span>
-                    </Link>
+                    </ActiveLink>
                 </nav>
 
                 <a type='button' className={styles.readyButton} href="https://sujeitoprogramador.com">COMEÇAR</a>
