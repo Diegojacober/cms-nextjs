@@ -6,8 +6,31 @@ import Image from 'next/image';
 import thumbImg from '@/../public/images/thumb.png'
 
 import { FiChevronLeft, FiChevronsLeft, FiChevronRight, FiChevronsRight } from 'react-icons/fi';
+import { GetStaticProps } from 'next';
 
-export default function Posts() {
+import { getPrismicClient } from '@/services/prismic';
+import Prismic from '@prismicio/client';
+import { RichText } from 'prismic-dom'
+
+type Content = {
+    title: string
+    titleContent: string
+    linkAction: string
+    mobileTitle: string
+    mobileContent: string
+    mobileBanner: string
+    webTitle:string
+    webContent: string
+    webBanner: string
+}
+
+interface ContentProps {
+    content: Content
+}
+
+export default function Posts({ content }: ContentProps) {
+
+    
     return(
         <>
             <Head>
@@ -49,4 +72,36 @@ export default function Posts() {
             </main>
         </>
     )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+
+    const prismic = getPrismicClient()
+
+    const response = await prismic.query([
+        Prismic.Predicates.at('document.type', 'home')
+    ])
+
+    const { title, sub_title, link_action, 
+        mobile, mobile_content, mobile_banner,
+        web, web_content, web_banner, } = response.results[0].data;
+
+    const content = {
+        title: RichText.asText(title),
+        titleContent: RichText.asText(sub_title),
+        linkAction: link_action.url,
+        mobileTitle: RichText.asText(mobile),
+        mobileContent: RichText.asText(mobile_content),
+        mobileBanner: RichText.asText(mobile_banner.url),
+        webTitle: RichText.asText(web),
+        webContent: RichText.asText(web_content),
+        webBanner: RichText.asText(web_banner.url),
+    }
+
+    return {
+        props: {
+            content
+        },
+        revalidate: 60 * 2
+    }
 }
