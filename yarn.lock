@@ -52,6 +52,43 @@
   resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.4.19.tgz#648f79c4e09279212ac90d871646ae12d80cdfce"
   integrity sha512-YzA78jBDXMYiINdPdJJwGgPNT3YqBNNGhsthsDoWHL9p24tEJn9ViQf/ZqTbwSpX/RrkPupLfuuTH2sf73JBAw==
 
+"@prismicio/client@^7.2.0":
+  version "7.2.0"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@prismicio/client/-/client-7.2.0.tgz#8e1aab9183e98a390bff335be4c405e04c474ea8"
+  integrity sha512-bfbs2ZMLd3ba7Bp1qI4qAz+13FIWE/JDT9+h+3hL/MVpK4iDpjz3vmOlYJs25myhryU9HP8Og7qKoaeE9hPzmA==
+  dependencies:
+    "@prismicio/richtext" "^2.1.5"
+    imgix-url-builder "^0.0.4"
+
+"@prismicio/helpers@^1.0.4":
+  version "1.2.0"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@prismicio/helpers/-/helpers-1.2.0.tgz#7e6c8a2ca469af3c3ff1997b4d8d4eb88ee86cdf"
+  integrity sha512-YsOfGgauGeTC5Co8zXvz278Lc/V3fyNaAPTs/y4gGrLmLhYa/eT7+USYvDB9RhKEPhYFnUqBiGWa+3l7BksYOQ==
+
+"@prismicio/react@^2.7.2":
+  version "2.7.2"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@prismicio/react/-/react-2.7.2.tgz#9b330acf33b8cb0e7e79e5ce24684325e388a329"
+  integrity sha512-Q39rvgQtLKjFPbIGBCqYO+S9opPk2WxMuSr0ZQ9DiT9FFIIh4cp09wqxAB6GLVn+FrifGswBH4Bafhof+Q6TRg==
+  dependencies:
+    "@prismicio/richtext" "^2.1.5"
+
+"@prismicio/richtext@^1.1.0":
+  version "1.1.0"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@prismicio/richtext/-/richtext-1.1.0.tgz#c8769c3d953ae42854a2aba951e3b2121682b8c7"
+  integrity sha512-925JuFiZiIkwu9jmlR9O/U8xCSZk/Y6BQDXKpavoVsKo+n90ml1hGdtWkglIupX+ITQO1ZINyDgUgiY1oG9dsA==
+
+"@prismicio/richtext@^2.1.5":
+  version "2.1.5"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@prismicio/richtext/-/richtext-2.1.5.tgz#8a433939765bead2a521150fb15af0b49c6af421"
+  integrity sha512-Sf6iCsciPmfK3uQeFmeY9RTRSuhrCVzyU39OkiJ1VJn8O0531pKapGoWS+5WGxouJtE5+jGqV8L+L2mKP7NkXQ==
+  dependencies:
+    "@prismicio/types" "^0.2.7"
+
+"@prismicio/types@^0.2.7":
+  version "0.2.8"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@prismicio/types/-/types-0.2.8.tgz#76a0eb2f657a87f003ec81b654c8d72dbcd3228b"
+  integrity sha512-EmuYYil56U+UtEifMD/9TmLzpWliV+X6kypwPq47GNXmIXyFK1JsP3z872fUziXwoBjd2YILj28DNdYXlLOpXg==
+
 "@swc/helpers@0.5.1":
   version "0.5.1"
   resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/@swc/helpers/-/helpers-0.5.1.tgz#e9031491aa3f26bfcc974a67f48bd456c8a5357a"
@@ -147,6 +184,11 @@ csstype@^3.0.2:
   resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
+escape-html@1.0.3:
+  version "1.0.3"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
+  integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -175,6 +217,11 @@ graceful-fs@^4.1.2:
   version "4.2.11"
   resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
+
+imgix-url-builder@^0.0.4:
+  version "0.0.4"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/imgix-url-builder/-/imgix-url-builder-0.0.4.tgz#c0e9569eb069178b1462d6ce0b8d0943cb334a1c"
+  integrity sha512-JRLydfxGTTbSSOG82ewuCgnmw/CzIPzoDqpP3UYD7RE+QWS8ZZbpF87ZuRqtcbEKdxahRsExinuKRxPZVvukWA==
 
 immutable@^4.0.0:
   version "4.3.4"
@@ -269,6 +316,15 @@ postcss@8.4.14:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+prismic-dom@^2.2.7:
+  version "2.2.7"
+  resolved "https://rb-artifactory.bosch.com:443/artifactory/api/npm/npm-repo/prismic-dom/-/prismic-dom-2.2.7.tgz#a4d36cc4fc92b84f8b46e5a515513c07b5f2f43e"
+  integrity sha512-4rJWzBqq/6h15giAzB6L8+eaWLQJrQcM4EAicmtw3mI8DhussbJOgheTeFtTCgvO7e5QEjZA0he5gEbQYfKGmg==
+  dependencies:
+    "@prismicio/helpers" "^1.0.4"
+    "@prismicio/richtext" "^1.1.0"
+    escape-html "1.0.3"
 
 react-dom@18.2.0:
   version "18.2.0"
